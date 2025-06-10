@@ -1,0 +1,43 @@
+@import 'variables.css';
+* {
+  font-family: var(--font-family-base);
+  text-decoration: none;
+}
+.navBar {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-lg);
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.leftSide {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.links,
+.leftSide {
+  color: var(--color-muted);
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+a {
+  color: var(--color-muted);
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
