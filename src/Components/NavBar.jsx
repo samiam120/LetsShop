@@ -4,7 +4,9 @@ const NavBar = () => {
   return (
     <div className={styles.navBar}>
       <div className={styles.leftSide}>
-        <span className={styles.logo}>🛍️</span>
+        <Link to="/">
+          <span className={styles.logo}>🛍️</span>
+        </Link>
         <Link to="/">Home</Link>
       </div>
 
