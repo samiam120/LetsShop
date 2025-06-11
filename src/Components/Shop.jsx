@@ -1,3 +1,4 @@
+import styles from "../styles/shop.module.css"
 import { useEffect, useState } from 'react';
 import ItemCard from './ItemCard';
 
@@ -22,8 +23,7 @@ const Shop = () => {
   if (loading) return <p>Loading</p>;
   if (error) return <p>A network error was encountered</p>;
   return (
-    <div>
-      <h1>Shop</h1>
+    <div className={styles.shop}>
       {products.map((product) => {
         return (
           <div key={product.id}>
