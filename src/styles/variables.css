@@ -1,5 +1,7 @@
 /* styles/variables.css */
 :root {
+  --max-width: 1600px;
+
   /* ========== Colors ========== */
   --color-primary: #6E41E2;
   --color-secondary: #FFFFFF;
@@ -10,7 +12,7 @@
   --color-border: #E0E0E0;
 
   /* ========== Typography ========== */
-  --font-family-base: 'Inter', sans-serif;
+  --font-family-base: 'Roboto','Inter', sans-serif;
   --font-sm: 0.875rem;   /* 14px */
   --font-md: 1rem;       /* 16px */
   --font-lg: 1.25rem;    /* 20px */
