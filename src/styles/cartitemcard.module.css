@@ -1,0 +1,60 @@
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 50px;
+  align-items: center;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px 10px 0 0;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.price,
+.quantity,
+.total {
+  font-size: 16px;
+  margin: 6px 0;
+  color: #333;
+}
+
+.total {
+  font-weight: bold;
+  color: #222;
+}
+
+.removeButton {
+  width: 120px;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #cd3a3a;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.removeButton:hover {
+  background-color: #f55e5e;
+}
