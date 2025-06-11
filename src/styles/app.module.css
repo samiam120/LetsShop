@@ -1,0 +1,10 @@
+@import 'variables.css';
+
+.appContainer {
+  max-width: var(--max-width);
+  height: 100vh;
+  margin: 0 auto;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+}
