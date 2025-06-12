@@ -1,4 +1,4 @@
-LetsShop ~ https://swampshop.netlify.app/
+LetsShop ~ lets-shop-samiam120s-projects.vercel.app
 
 LetsShop is a single-page e-commerce React application that demonstrates core frontend development concepts including routing, state management, API integration, component-based architecture, and testing.
 
