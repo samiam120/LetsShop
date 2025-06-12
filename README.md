@@ -13,7 +13,7 @@ LetsShop is a single-page e-commerce React application that demonstrates core fr
 
   Features 
   
-	•	Home Page -Contains static content and a responsive layout showcasing app branding.
+	•	Home Page - Contains static content and a responsive layout showcasing app branding.
 	•	Shop Page - Fetches product data from FakeStore API and displays them in a grid of ItemCards. Each card allows:
 	•	Title and price display
 	•	Add to Cart functionality with spinner feedback
