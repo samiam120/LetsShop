@@ -1,7 +1,8 @@
 import { useState, createContext, useEffect } from 'react';
 import NavBar from './Components/NavBar';
 import { Outlet } from 'react-router-dom';
-import styles from './styles/app.module.css'
+import styles from './styles/app.module.css';
+import { Analytics } from '@vercel/analytics/react';
 
 export const OutletContext = createContext();
 
@@ -38,14 +39,14 @@ const App = () => {
           return cartItem;
         }),
         totalItems: cartState.totalItems + item.quantity,
-        totalPrice: cartState.totalPrice + (item.price * item.quantity),
+        totalPrice: cartState.totalPrice + item.price * item.quantity,
       });
     } else {
       updateCartState({
         ...cartState,
         cart: [...cartState.cart, item],
         totalItems: cartState.totalItems + item.quantity,
-        totalPrice: cartState.totalPrice + (item.price * item.quantity),
+        totalPrice: cartState.totalPrice + item.price * item.quantity,
       });
     }
   };
@@ -71,6 +72,7 @@ const App = () => {
           <Outlet />
         </OutletContext.Provider>
       </div>
+      <Analytics />
     </>
   );
 };
