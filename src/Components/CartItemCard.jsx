@@ -13,9 +13,14 @@ const CartItemCard = ({ item }) => {
       <div className={styles.card}>
         <h2>{item.title}</h2>
         <p className={styles.price}>Price: ${item.price}</p>
-        <p clasName={styles.quantity}>Quantity: {item.quantity}</p>
+        <p className={styles.quantity}>Quantity: {item.quantity}</p>
         <p className={styles.total}>Total: ${item.price * item.quantity}</p>
-        <button className={styles.removeButton} onClick={() => removeFromCart(item.id)}>Remvove From Cart</button>
+        <button
+          className={styles.removeButton}
+          onClick={() => removeFromCart(item.id)}
+        >
+          Remove From Cart
+        </button>
       </div>
     </div>
   );

@@ -17,14 +17,14 @@ const ItemCard = ({ item }) => {
 
       <div className={styles.buttons}>
         <button
-          class={styles.quantityButton}
+          className={styles.quantityButton}
           disabled={isLoading}
           onClick={() => setQuantity((prevQuantity) => prevQuantity + 1)}
         >
           Quantity: {quantity}
         </button>
         <button
-          class={styles.addToCartBtn}
+          className={styles.addToCartBtn}
           disabled={isLoading}
           onClick={() => {
             setIsLoading(true);
@@ -34,7 +34,11 @@ const ItemCard = ({ item }) => {
             }, 2000);
           }}
         >
-          {isLoading ? <span className={styles.spinner}></span> : 'Add to Cart'}
+          {isLoading ? (
+            <span data-testid="spinner" className={styles.spinner}></span>
+          ) : (
+            'Add to Cart'
+          )}
         </button>
       </div>
     </div>
