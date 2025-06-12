@@ -1,6 +1,6 @@
 LetsShop ~ https://swampshop.netlify.app/shop
 
-LetsShop is a single-page e-commerce React application that demonstrates core frontend development concepts including routing, state management, API integration, component-based architecture, and testing. This project was developed as part of a learning experience guided by The Odin Project.
+LetsShop is a single-page e-commerce React application that demonstrates core frontend development concepts including routing, state management, API integration, component-based architecture, and testing.
 
   Tech Stack
 	•	React (with Vite)
