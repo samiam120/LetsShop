@@ -11,11 +11,12 @@ LetsShop is a single-page e-commerce React application that demonstrates core fr
 	•	React Testing Library + Vitest (for unit and component testing)
 
 
-  Features
-	•	Home Page
-Contains static content and a responsive layout showcasing app branding.
+  Features 
+  
+	•	Home Page 
+	Contains static content and a responsive layout showcasing app branding.
 	•	Shop Page
-Fetches product data from FakeStore API and displays them in a grid of ItemCards. Each card allows:
+	Fetches product data from FakeStore API and displays them in a grid of ItemCards. Each card allows:
 	•	Title and price display
 	•	Add to Cart functionality with spinner feedback
 	•	Cart Page
@@ -30,21 +31,21 @@ Fetches product data from FakeStore API and displays them in a grid of ItemCards
 
   State Management
 
-Global cart state is managed using useContext via a shared CartContext. This avoids prop drilling and allows components such as NavBar, Shop, and Cart to read/write from the same state source.
+	Global cart state is managed using useContext via a shared CartContext. This avoids prop drilling and allows components such as NavBar, Shop, and Cart to read/write from the same state source.
 
 
 
 Setup & Run Locally
 
-# Clone the repository
-git clone https://github.com/samiam120/lets-shop.git
-cd lets-shop
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Run tests
-npm run test
+	# Clone the repository
+	git clone https://github.com/samiam120/lets-shop.git
+	cd lets-shop
+	
+	# Install dependencies
+	npm install
+	
+	# Start development server
+	npm run dev
+	
+	# Run tests
+	npm run test
