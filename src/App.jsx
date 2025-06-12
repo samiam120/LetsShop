@@ -3,6 +3,7 @@ import NavBar from './Components/NavBar';
 import { Outlet } from 'react-router-dom';
 import styles from './styles/app.module.css';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 export const OutletContext = createContext();
 
@@ -73,6 +74,7 @@ const App = () => {
         </OutletContext.Provider>
       </div>
       <Analytics />
+      <SpeedInsights />
     </>
   );
 };
