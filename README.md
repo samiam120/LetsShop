@@ -1,12 +1,49 @@
-# React + Vite
+LetsShop ~ https://swampshop.netlify.app/shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LetsShop is a single-page e-commerce React application that demonstrates core frontend development concepts including routing, state management, API integration, component-based architecture, and testing. This project was developed as part of a learning experience guided by The Odin Project.
 
-Currently, two official plugins are available:
+  Tech Stack
+	•	React (with Vite)
+	•	React Router DOM (for SPA routing)
+	•	CSS Modules (for scoped styling)
+	•	FakeStore API (for mock product data)
+	•	React Testing Library + Vitest (for unit and component testing)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+  Features
+	•	Home Page
+Contains static content and a responsive layout showcasing app branding.
+	•	Shop Page
+Fetches product data from FakeStore API and displays them in a grid of ItemCards. Each card allows:
+	•	Title and price display
+	•	Add to Cart functionality with spinner feedback
+	•	Cart Page
+	•	Displays items added to cart with quantity and subtotal
+	•	Remove buttons to delete individual items
+	•	Checkout summary (total items, total price)
+	•	Navigation Bar
+	  • Present on all pages
+	•	Includes logo, Home, Shop, and Cart links
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⸻
+
+  State Management
+
+Global cart state is managed using useContext via a shared CartContext. This avoids prop drilling and allows components such as NavBar, Shop, and Cart to read/write from the same state source.
+
+
+
+Setup & Run Locally
+
+# Clone the repository
+git clone https://github.com/samiam120/lets-shop.git
+cd lets-shop
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Run tests
+npm run test
